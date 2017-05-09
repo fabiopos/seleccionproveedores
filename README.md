@@ -6,21 +6,21 @@ El sistema debe,por medio de una serie de reglas configuradas en el archivo .clp
 
 ## Criterios
 
-Cost	
+### Cost	
 	ProductPrice
 	Freight cost
 	Tariff and custom duties
-Quality	
+### Quality	
 	Rejection rate of the product
 	Increased lead time
 	Quality assesment
 	Remedy for quality problems
-ServicePerformance	
+### ServicePerformance	
 	Delivery schedule
 	Technological and R&D support
 	Response to changes
 	Ease of communication
-Supplier's profile	
+### Supplier's profile	
 	Finnancial status
 	Customer base
 	Performance history
