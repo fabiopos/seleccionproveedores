@@ -6,21 +6,32 @@ El sistema debe,por medio de una serie de reglas configuradas en el archivo .clp
 
 ## Criterios
 
-### Cost	
+### Cost
+    Evaluará el costo del producto del proveedor, sus dimensiones son:
+
 	ProductPrice
 	Freight cost
 	Tariff and custom duties
+
 ### Quality	
+    Evaluará la calidad del producto del proveedor, sus dimensiones son:
+
 	Rejection rate of the product
 	Increased lead time
 	Quality assesment
 	Remedy for quality problems
+
 ### ServicePerformance	
+    Evaluará el desempeño del proveedor respecto a las necesidades de la organización, sus dimensiones son:
+
 	Delivery schedule
 	Technological and R&D support
 	Response to changes
 	Ease of communication
-### Supplier's profile	
+
+### Supplier's profile
+    Evalúa el perfil del proveedor, lo que tiene que ver con las características del proveedor que finalmente afectan a la organización:
+
 	Finnancial status
 	Customer base
 	Performance history
@@ -29,4 +40,10 @@ El sistema debe,por medio de una serie de reglas configuradas en el archivo .clp
 	Political stability
 	Economy
 	Terrorism
+
+## Business Logic
+
+El sistema experto tomará los datos en cada una de las dimensiones y realizará una evaluación del criterio. Por ejemplo, para "Cost", se evaluarán "ProductPrice",	"Freight cost" y "Tariff and custom duties", las cuales en conjunto darán la evaluación total del criterio.
+
+Al evaluar los cuatro criterios la aplicación realizará una ponderación de la nota con base en el peso de cada uno de los criterios (peso que podrá ser parametrizado por el usuario).
 
